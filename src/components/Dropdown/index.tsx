@@ -386,16 +386,7 @@ const DropdownComponent: <T>(
             </Text>
             {renderRightIcon ? (
               renderRightIcon(visible)
-            ) : (
-              <Image
-                source={ic_down}
-                style={StyleSheet.flatten([
-                  styles.icon,
-                  { tintColor: iconColor },
-                  iconStyle,
-                ])}
-              />
-            )}
+            ) : null}
           </View>
         </TouchableWithoutFeedback>
       );
